@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 5</title>
+    <Style>
+        section {
+            background-color: red;
+            padding: 20px;
+            margin: 10px;
+            font-size: large;
+            color: grey;
+            border: 20px lightcoral solid;
+        }
+        table, th, tr, td {
+            border: 1px solid black;
+            padding: 10px;
+            border-spacing: 10px;
+            border-collapse: collapse;
+            border-collapse: separate;}
+        /* padding || border || border-spacing overwrites border("1") || cellpadding || cellspacing */
+        th, td{
+            height: 50px;
+            vertical-align: top;
+            vertical-align: middle;
+            vertical-align: bottom;
+        }
+
+        th, td{
+            text-align: left;
+            text-align: center;
+            text-align: right;
+        }
+        caption {
+            caption-side: top;
+            caption-side: bottom;
+        }
+        td {
+            empty-cells: show;
+            empty-cells: hide;
+        }
+    </Style>
+</head>
+<body>
+    <h1>DataList</h1>
+    <!-- Same value for list and id(datalist) but differnt for name and id and for -->
+    <section>
+        <label for="data">Choose your browser</label>
+        <input list="dt" name="data" id="data">
+            <datalist id="dt">
+            <option value="Google"></option>
+            <option value="Mozilla"></option>
+            <option value="Safari"></option>
+            <option value="Opera"></option>
+            <option value="Int. Explorer"></option>
+        </datalist>
+        <input type="submit" value="submit" >
+    </section>
+
+    <hr>
+
+    <h1>Table</h1>
+    <div>
+        <!-- Border || Cellspacing || Width || Cellpadding - Attributes -->
+        <table border="1" width="100%" cellspacing="20px" cellpadding="20px">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Browser</th>
+                    <th>Size</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Google</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Safari</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mozilla</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Opera</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>1100</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
